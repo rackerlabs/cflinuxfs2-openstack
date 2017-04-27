@@ -1,4 +1,4 @@
 FROM cloudfoundry/cflinuxfs2
 
-
-RUN install_openstack_utils.sh 
+ADD build /tmp/build
+RUN bash /tmp/build/install_openstack_utils.sh
